@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+
+/* inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-inter: "Inter", system-ui, sans-serif;
+}
+
+@utility font-inter {
+  font-family: var(--font-inter);
+}
+
+/* satoshi font */
+@font-face {
+  font-family: "Satoshi";
+  src: url("./fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-satoshi: "Satoshi", system-ui, sans-serif;
+}
+
+@utility font-satoshi {
+  font-family: var(--font-satoshi);
+}
+
+/* satoshi bold font */
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("./fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-satoshib: "Satoshi-Bold", system-ui, sans-serif;
+}
+
+@utility font-satoshib {
+  font-family: var(--font-satoshib);
+}
+
+/* basic-styles for smooth rendering */
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  svg {
+    shape-rendering: geometricPrecision;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* satoshi light */
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("./fonts/Satoshi-Light.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-satoshil: "Satoshi-Light", system-ui, sans-serif;
+}
+
+@utility font-satoshil {
+  font-family: var(--font-satoshil);
+}
+
+@theme{
+  --color-primary: #5046e5;
+  --color-secondary: #e1e7ff;
+  --color-slatish: #edf2f0;
+}
